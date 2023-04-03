@@ -1,2 +1,2 @@
 # rayhan-calculator
-Mini calculaotr project
+Mini calculator project
