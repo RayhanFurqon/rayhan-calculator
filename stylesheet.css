@@ -43,6 +43,10 @@ button {
     background-color: orange;
 }
 
+.percentage {
+    background-color: gray;
+}
+
 button:hover{
     background-color: darkgray;
 }
