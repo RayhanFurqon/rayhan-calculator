@@ -4,10 +4,20 @@ const operators = document.querySelectorAll(".operator");
 const equalSign = document.querySelector(".equal-sign");
 const clearBtn = document.querySelector(".all-clear");
 const decimal = document.querySelector(".decimal");
+const percentage = document.querySelector(".percentage");
 
 let prevNumber = "";
 let calculationOperator = "";
 let currentNumber = "0";
+
+const inputPercentage = () => {
+  currentNumber = currentNumber / 100;
+};
+
+percentage.addEventListener("click", (event) => {
+  inputPercentage(event.target.value);
+  updateScreen(currentNumber);
+});
 
 const inputDecimal = (dot) => {
   if (currentNumber.includes(".")) {
